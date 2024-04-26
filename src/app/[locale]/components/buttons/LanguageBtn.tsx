@@ -1,13 +1,9 @@
 "use client";
 
+import React from "react";
 import { Button } from "@mui/material";
 import { useRouter } from "next/navigation";
-import React from "react";
-
-interface LanguageBtnProps {
-  content: string;
-  languageCode: string;
-}
+import { LanguageBtnProps } from "../../interfaces/interfaces";
 
 const LanguageBtn: React.FC<LanguageBtnProps> = ({ content, languageCode }) => {
   const router = useRouter();

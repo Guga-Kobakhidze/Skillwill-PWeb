@@ -5,6 +5,7 @@ export const PotentialContent: SxProps = {
   justifyContent: "center",
   alignItems: "center",
   gap: "80px",
+  marginBottom: "112px",
 
   ".VideoBox": {
     width: "100%",

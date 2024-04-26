@@ -1,16 +1,7 @@
+import React from "react";
 import { Button } from "@mui/material";
 import { BtnStyle } from "./ButtonStyle";
-import React from "react";
-
-type ButtonVariant = "text" | "outlined" | "contained";
-
-interface ButtonProps {
-  variant: ButtonVariant;
-  content: string;
-  bgColor: string;
-  color: string;
-  onClick?: () => void;
-}
+import { ButtonProps } from "../../interfaces/interfaces";
 
 const BtnComponent: React.FC<ButtonProps> = ({
   content,
