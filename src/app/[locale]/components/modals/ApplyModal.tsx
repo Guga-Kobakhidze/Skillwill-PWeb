@@ -5,8 +5,20 @@ import BtnComponent from "../buttons/BtnComponent";
 import { Box } from "@mui/material";
 import ApplyForm from "./ApplyForm";
 import { OverLayStyle } from "./ModalsStyle";
+import { ApplyModalProps } from "../../interfaces/interfaces";
 
-const ApplyModal: React.FC<{ btnContent: string }> = ({ btnContent }) => {
+const ApplyModal: React.FC<ApplyModalProps> = ({
+  btnContent,
+  description,
+  email,
+  firstName,
+  lastName,
+  phoneNumber,
+  radioCorporate,
+  radioPrivate,
+  submit,
+  title,
+}) => {
   const [showModal, setShowModal] = useState<boolean>(false);
   const [showOverlay, setShowOverlay] = useState<boolean>(false);
 
@@ -17,7 +29,20 @@ const ApplyModal: React.FC<{ btnContent: string }> = ({ btnContent }) => {
 
   return (
     <Box>
-      {showModal && <ApplyForm onClick={onToggle} />}
+      {showModal && (
+        <ApplyForm
+          onClose={onToggle}
+          description={description}
+          email={email}
+          firstName={firstName}
+          lastName={lastName}
+          phoneNumber={phoneNumber}
+          radioCorporate={radioCorporate}
+          radioPrivate={radioPrivate}
+          submit={submit}
+          title={title}
+        />
+      )}
       {showOverlay && <Box sx={{ ...OverLayStyle }} onClick={onToggle}></Box>}
       <BtnComponent
         content={btnContent}

@@ -12,6 +12,7 @@ const BtnComponent: React.FC<ButtonProps> = ({
 }) => {
   return (
     <Button
+      type={!onClick ? "submit" : "button"}
       onClick={onClick}
       sx={{ ...BtnStyle(color, bgColor) }}
       variant={variant}

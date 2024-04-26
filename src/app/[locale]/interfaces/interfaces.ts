@@ -32,3 +32,31 @@ export interface LanguageBtnProps {
   content: string;
   languageCode: string;
 }
+
+// Modal Form interface
+
+export interface ApplyModalProps {
+  btnContent: string;
+  title: string;
+  description: string;
+  radioPrivate: string;
+  radioCorporate: string;
+  firstName: string;
+  lastName: string;
+  phoneNumber: string;
+  email: string;
+  submit: string;
+}
+
+export interface ApllyFormProps {
+  onClose: () => void;
+  description: string;
+  email: string;
+  firstName: string;
+  lastName: string;
+  phoneNumber: string;
+  radioCorporate: string;
+  radioPrivate: string;
+  submit: string;
+  title: string;
+}

@@ -10,6 +10,17 @@
     "privacy": "Privacy Policy",
     "terms": "Terms & Conditions"
   },
+  "ApplyForm": {
+    "title": "Apply",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in",
+    "radioPrivate": "Private Client",
+    "radioCorporate": "Corporate Client",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "phoneNumber": "Phone Number",
+    "email": "Email",
+    "submit": "Submit"
+  },
   "Potential": {
     "title": "Unlock Your Potential with Our Funding Program",
     "text": "Our funding program provides everyone with the financial support they need to make a positive impact in their communities.",
