@@ -5,6 +5,11 @@
     "benefits": "Benefits",
     "contact": "Contact us"
   },
+  "Footer": {
+    "copyright": "Copyright © 2021 SkillWill. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions"
+  },
   "Potential": {
     "title": "Unlock Your Potential with Our Funding Program",
     "text": "Our funding program provides everyone with the financial support they need to make a positive impact in their communities.",

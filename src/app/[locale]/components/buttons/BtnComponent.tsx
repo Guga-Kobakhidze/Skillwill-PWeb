@@ -11,7 +11,11 @@ const BtnComponent: React.FC<ButtonProps> = ({
   onClick,
 }) => {
   return (
-    <Button sx={{ ...BtnStyle(color, bgColor) }} variant={variant}>
+    <Button
+      onClick={onClick}
+      sx={{ ...BtnStyle(color, bgColor) }}
+      variant={variant}
+    >
       {content}
     </Button>
   );

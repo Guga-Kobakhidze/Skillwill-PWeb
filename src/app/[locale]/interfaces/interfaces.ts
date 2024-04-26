@@ -7,6 +7,13 @@ export interface RootLayoutProps {
   };
 }
 
+// Main Context Interface
+
+export interface MainContextType {
+  showOverlay: boolean;
+  setShowOverlay: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
 // Button Variants
 
 type ButtonVariant = "text" | "outlined" | "contained";

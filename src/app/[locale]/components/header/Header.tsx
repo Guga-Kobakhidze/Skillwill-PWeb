@@ -1,10 +1,10 @@
-import { Box, ButtonGroup } from "@mui/material";
-import { HeaderBox, HeaderContentBox } from "./HeaderStyle";
-import Image from "next/image";
-import React, { useState } from "react";
+import React from "react";
 import Nav from "./Nav";
 import Link from "next/link";
+import Image from "next/image";
 import LanguageBtn from "../buttons/LanguageBtn";
+import { Box, ButtonGroup } from "@mui/material";
+import { HeaderBox, HeaderContentBox } from "./HeaderStyle";
 
 const Header = () => {
   return (

@@ -2,7 +2,7 @@ import { Box, Typography } from "@mui/material";
 import { useTranslations } from "next-intl";
 import { PotentialBox, PotentialContent } from "./PotentialStyle";
 import React from "react";
-import BtnComponent from "../buttons/BtnComponent";
+import ApplyModal from "../modals/ApplyModal";
 
 const Potential = () => {
   const t = useTranslations("Potential");
@@ -14,12 +14,7 @@ const Potential = () => {
         <Typography className="paragraph" variant="body1">
           {t("text")}
         </Typography>
-        <BtnComponent
-          content={t("button")}
-          variant="contained"
-          bgColor="#3D6ECF"
-          color="#fff"
-        />
+        <ApplyModal btnContent={t("button")} />
       </Box>
       <Box className="VideoBox">
         <iframe

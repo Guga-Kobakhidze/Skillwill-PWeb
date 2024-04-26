@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import { Box } from "@mui/material";
 import { RootLayoutProps } from "./interfaces/interfaces";
 import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,9 +20,10 @@ export default function RootLayout({
   return (
     <html lang={locale}>
       <body className={inter.className}>
-        <Box>
+        <Box className="mainContent">
           <Header />
           {children}
+          <Footer />
         </Box>
       </body>
     </html>
