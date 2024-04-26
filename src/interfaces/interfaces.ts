@@ -52,3 +52,15 @@ export interface ApllyFormProps {
   submit: string;
   title: string;
 }
+
+// Marquee Companies Props
+
+interface CompaniesData {
+  id: number;
+  img: string;
+  alt: string;
+}
+
+export interface MarqueeCompaniesProps {
+  data: CompaniesData[];
+}
