@@ -13,14 +13,7 @@ const Footer = () => {
     <Box sx={{ ...FooterBox }}>
       <Box className="container">
         <Box className="footer-content">
-          <Link href={"/"}>
-            <Image
-              width={63}
-              height={27}
-              src="assets/whiteLogo.svg"
-              alt="Logo"
-            />
-          </Link>
+          <Image width={63} height={27} src="assets/whiteLogo.svg" alt="Logo" />
           <Nav />
         </Box>
         <Box className="copyright">
