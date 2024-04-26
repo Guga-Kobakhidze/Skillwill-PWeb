@@ -1,5 +1,5 @@
+import Potential from "@/components/potential/Potential";
 import { Box } from "@mui/material";
-import Potential from "./components/potential/Potential";
 
 export default function Home() {
   return (

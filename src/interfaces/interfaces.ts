@@ -31,21 +31,13 @@ export interface ButtonProps {
 export interface LanguageBtnProps {
   content: string;
   languageCode: string;
+  isActive?: boolean;
 }
 
 // Modal Form interface
 
 export interface ApplyModalProps {
   btnContent: string;
-  title: string;
-  description: string;
-  radioPrivate: string;
-  radioCorporate: string;
-  firstName: string;
-  lastName: string;
-  phoneNumber: string;
-  email: string;
-  submit: string;
 }
 
 export interface ApllyFormProps {

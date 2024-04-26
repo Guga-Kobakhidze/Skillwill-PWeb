@@ -4,7 +4,7 @@ export const PotentialContent: SxProps = {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  gap: "80px",
+  gap: "100px",
   marginBottom: "112px",
 
   ".VideoBox": {
@@ -15,7 +15,7 @@ export const PotentialContent: SxProps = {
 };
 
 export const PotentialBox: SxProps = {
-  maxWidth: 560,
+  maxWidth: 580,
 
   h3: {
     fontFamily: "RocBold",

@@ -52,6 +52,10 @@ export const ApplyFormBox: SxProps = {
     display: "flex",
     gap: "24px",
     marginBottom: "20px",
+
+    div: {
+      width: "100%",
+    },
   },
 
   ".closeBtn": {
