@@ -12,32 +12,6 @@ const ScrollerMaruee = keyframes`
   }
 `;
 
-// export const MarqueeBox(Box) => {
-//   textAlign: "center",
-//   padding: "80px 0",
-//   backgroundColor: "#F5F7F8",
-//   marginBottom: "112px",
-
-//   h5: {
-//     fontSize: "18px",
-//     fontFamily: "RocRegular",
-//     marginBottom: "48px",
-//   },
-
-//   ".Logos": {
-//     display: "flex",
-//     overflow: "hidden",
-
-//     ".logos-slide": {
-//       display: "flex",
-
-//       img: {
-//         margin: "0 40px",
-//       },
-//     },
-//   },
-// };
-
 export const MarqueeBox = styled(Box)({
   textAlign: "center",
   padding: "80px 0",

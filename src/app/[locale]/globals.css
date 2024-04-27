@@ -147,6 +147,7 @@ table {
 svg {
   cursor: pointer;
 }
+
 .container {
   max-width: 1440px;
   width: 100%;
@@ -166,4 +167,27 @@ svg {
 @font-face {
   font-family: "RocRegular";
   src: url("../../../public/fonts/Rocgrotesk-medium.ttf");
+}
+
+.title {
+  font-weight: 700;
+  font-size: 2.9rem;
+  line-height: 3.6rem;
+  margin-bottom: 12px;
+  font-family: "RocBold";
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  margin-bottom: 112px;
+}
+
+.paragraph {
+  color: rgba(0, 0, 0, 0.7);
+  font-family: "RocRegular";
+  font-weight: lighter;
+  font-size: 16px;
 }

@@ -25,5 +25,24 @@
     "title": "Unlock Your Potential with Our Funding Program",
     "text": "Our funding program provides everyone with the financial support they need to make a positive impact in their communities.",
     "button": "Apply"
+  },
+  "Supporting": {
+    "title": "Supporting everyone with Financial Support and Additional Resources",
+    "paragraph": "Our funding program offers financial support to individuals of all backgrounds, assisting them in pursuing their educational goals and building a brighter future. Whether you're a recent high school graduate hoping to attend college or a working professional aiming to further your education, we're here to help.",
+    "checkText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  },
+  "Benefits": {
+    "title": "Why choose us",
+    "qualityTitle": "Quality Assurance",
+    "qualityText": "Ensure that each project undergoes rigorous vetting processes, guaranteeing high standards of quality and credibility for potential backers.",
+    "trustTitle": "Transparency and Trust",
+    "trustText": "Ensure transparency in the funding process, building trust between backers and project creators through clear communication and accountability measures.",
+    "integrityTitle": "Integrity",
+    "integrityText": "Uphold principles of honesty and integrity throughout the funding process, fostering a culture of trust and reliability between all stakeholders involved."
+  },
+  "Success": {
+    "title": "Details sent",
+    "message": "Your information has been received, we will contact you shortly",
+    "btn": "close"
   }
 }

@@ -1,6 +1,8 @@
+"use client";
 import { Box } from "@mui/material";
 import { useTranslations } from "next-intl";
-import Link from "next/link";
+// import Link from "next/link";
+import { Link } from "react-scroll";
 import React from "react";
 
 const Nav = () => {
@@ -8,10 +10,18 @@ const Nav = () => {
 
   return (
     <Box className="navigation">
-      <Link href={"#Partners"}>{t("partners")}</Link>
-      <Link href={"#"}>{t("about")}</Link>
-      <Link href={"#"}>{t("benefits")}</Link>
-      <Link href={"#"}>{t("contact")}</Link>
+      <Link to="partners" spy={true} smooth={true} duration={50} offset={-80}>
+        {t("partners")}
+      </Link>
+      <Link to="about" spy={true} smooth={true} duration={50} offset={-100}>
+        {t("about")}
+      </Link>
+      <Link to="benefits" spy={true} smooth={true} duration={50} offset={-100}>
+        {t("benefits")}
+      </Link>
+      <Link to="partners" spy={true} smooth={true} duration={50}>
+        {t("contact")}
+      </Link>
     </Box>
   );
 };

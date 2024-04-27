@@ -6,7 +6,7 @@ import { MarqueeBox } from "./MarqueeStyle";
 
 const Marquee = () => {
   return (
-    <MarqueeBox id="Partners">
+    <MarqueeBox id="partners">
       <Typography variant="h5" color={"black"}>
         Trusted by the worlds best companies
       </Typography>
