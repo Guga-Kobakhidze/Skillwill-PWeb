@@ -147,6 +147,7 @@ table {
 svg {
   cursor: pointer;
 }
+
 .container {
   max-width: 1440px;
   width: 100%;
@@ -167,3 +168,4 @@ svg {
   font-family: "RocRegular";
   src: url("../../../public/fonts/Rocgrotesk-medium.ttf");
 }
+
