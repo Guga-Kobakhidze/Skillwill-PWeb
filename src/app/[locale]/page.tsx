@@ -1,3 +1,4 @@
+import Benefits from "@/components/benefits";
 import Marquee from "@/components/marquee/Marquee";
 import Potential from "@/components/potential/Potential";
 import Supporting from "@/components/supporting";
@@ -9,6 +10,7 @@ export default function Home() {
       <Potential />
       <Marquee />
       <Supporting />
+      <Benefits />
     </Box>
   );
 }

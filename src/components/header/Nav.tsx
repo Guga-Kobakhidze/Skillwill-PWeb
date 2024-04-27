@@ -10,9 +10,9 @@ const Nav = () => {
 
   return (
     <Box className="navigation">
-      <Link to="partners" spy={true} smooth={true} duration={50}>{t("partners")}</Link>
-      <Link to="about" spy={true} smooth={true} duration={50} >{t("about")}</Link>
-      <Link to="partners" spy={true} smooth={true} duration={50}>{t("benefits")}</Link>
+      <Link to="partners" spy={true} smooth={true} duration={50} offset={-80}>{t("partners")}</Link>
+      <Link to="about" spy={true} smooth={true} duration={50} offset={-100}>{t("about")}</Link>
+      <Link to="benefits" spy={true} smooth={true} duration={50} offset={-100}>{t("benefits")}</Link>
       <Link to="partners" spy={true} smooth={true} duration={50}>{t("contact")}</Link>
     </Box>
   );
