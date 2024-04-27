@@ -64,3 +64,16 @@ interface CompaniesData {
 export interface MarqueeCompaniesProps {
   data: CompaniesData[];
 }
+
+// Choose Card Props
+
+interface ChooseCard {
+  id: number;
+  img: string;
+  title: string;
+  desc: string;
+}
+
+export interface ChooseCardProps {
+  data: ChooseCard[];
+}
