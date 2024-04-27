@@ -26,6 +26,6 @@ export const PotentialBox: SxProps = {
 
   ".paragraph": {
     fontFamily: "RocRegular",
-    marginBottom: "24px",
+    marginBottom: "22px",
   },
 };
