@@ -13,6 +13,15 @@ export const FooterBox: SxProps = {
     paddingBottom: "80px",
     borderBottom: "1px solid rgba(255, 255, 255, 0.3)",
     marginBottom: "33px",
+
+    a: {
+      cursor: "pointer",
+      transition: "0.3s",
+
+      "&:hover": {
+        opacity: 0.4,
+      },
+    },
   },
 
   ".navigation": {

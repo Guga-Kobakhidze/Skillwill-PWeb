@@ -65,3 +65,29 @@ export const ApplyFormBox: SxProps = {
     top: "16.5px",
   },
 };
+
+export const SuccessBox: SxProps = {
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  justifyContent: "center",
+
+  img: {
+    marginBottom: "24px",
+  },
+
+  h4: {
+    fontFamily: "RocBold",
+    marginBottom: "15px",
+  },
+
+  ".paragraph": {
+    marginBottom: "40px",
+    maxWidth: "430px",
+    textAlign: "center",
+  },
+
+  button: {
+    width: "260px",
+  },
+};

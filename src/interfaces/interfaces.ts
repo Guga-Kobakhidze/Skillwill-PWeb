@@ -1,5 +1,7 @@
 // Layout Interface
 
+import { RefObject } from "react";
+
 export interface RootLayoutProps {
   children: React.ReactNode;
   params: {
@@ -42,15 +44,15 @@ export interface ApplyModalProps {
 
 export interface ApllyFormProps {
   onClose: () => void;
-  description: string;
-  email: string;
-  firstName: string;
-  lastName: string;
-  phoneNumber: string;
-  radioCorporate: string;
-  radioPrivate: string;
-  submit: string;
-  title: string;
+}
+
+// InputForm Props
+
+export interface InputFormProps {
+  firstName: RefObject<HTMLInputElement> | null;
+  lastName: RefObject<HTMLInputElement> | null;
+  phoneNumber: RefObject<HTMLInputElement> | null;
+  email: RefObject<HTMLInputElement> | null;
 }
 
 // Marquee Companies Props
@@ -68,7 +70,7 @@ export interface MarqueeCompaniesProps {
 // Benefits Interface
 
 export interface Benefits {
-  title: string
-  paragraph: string
-  img: string
+  title: string;
+  paragraph: string;
+  img: string;
 }
