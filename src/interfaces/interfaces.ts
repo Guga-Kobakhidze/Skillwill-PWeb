@@ -64,3 +64,11 @@ interface CompaniesData {
 export interface MarqueeCompaniesProps {
   data: CompaniesData[];
 }
+
+// Benefits Interface
+
+export interface Benefits {
+  title: string
+  paragraph: string
+  img: string
+}
