@@ -8,7 +8,7 @@ const Nav = () => {
 
   return (
     <Box className="navigation">
-      <Link href={"#"}>{t("partners")}</Link>
+      <Link href={"#Partners"}>{t("partners")}</Link>
       <Link href={"#"}>{t("about")}</Link>
       <Link href={"#"}>{t("benefits")}</Link>
       <Link href={"#"}>{t("contact")}</Link>
