@@ -8,7 +8,7 @@ import Image from 'next/image';
 const Supporting = () => {
     const t = useTranslations("Supporting");
   return (
-   <Box className="container">
+   <Box className="container" id="about">
      <Box sx={{...SupportingBox}}>
         <Box sx={{...supportingTexts}}>
         <Typography variant="h4" sx={{...Title}}>{t("title")}</Typography>
