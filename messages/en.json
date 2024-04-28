@@ -10,7 +10,7 @@
     "privacy": "Privacy Policy",
     "terms": "Terms & Conditions"
   },
-  "ApplyForm": {
+  "FormContent": {
     "title": "Apply",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in",
     "radioPrivate": "Private Client",
@@ -19,7 +19,12 @@
     "lastName": "Last Name",
     "phoneNumber": "Phone Number",
     "email": "Email",
-    "submit": "Submit"
+    "submit": "Submit",
+    "contactTitle": "Contact Us",
+    "contactDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "contactCheck": "I agree with",
+    "contactCheckSpan": "Terms and Conditions",
+    "warning": "Please fill the Inputs"
   },
   "Potential": {
     "title": "Unlock Your Potential with Our Funding Program",
