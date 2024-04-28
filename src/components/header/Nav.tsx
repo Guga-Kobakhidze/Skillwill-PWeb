@@ -19,7 +19,7 @@ const Nav = () => {
       <Link to="benefits" spy={true} smooth={true} duration={50} offset={-100}>
         {t("benefits")}
       </Link>
-      <Link to="partners" spy={true} smooth={true} duration={50}>
+      <Link to="contact" spy={true} smooth={true} duration={50}>
         {t("contact")}
       </Link>
     </Box>

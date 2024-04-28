@@ -9,7 +9,7 @@ const InputForm: React.FC<InputFormProps> = ({
   phoneNumber,
   email,
 }) => {
-  const t = useTranslations("ApplyForm");
+  const t = useTranslations("FormContent");
 
   return (
     <Box>

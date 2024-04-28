@@ -16,46 +16,23 @@ import BtnComponent from "../buttons/BtnComponent";
 import Success from "./Success";
 import { useTranslations } from "next-intl";
 import InputForm from "../Forms/InputForm";
+import useForm from "@/hooks/useForm";
 
 const ApplyForm: React.FC<ApllyFormProps> = ({ onClose }) => {
-  const RadioPrivateRef = useRef<HTMLInputElement>(null);
-  const RadioCorporateRef = useRef<HTMLInputElement>(null);
-  const FirstNameRef = useRef<HTMLInputElement>(null);
-  const LastNameRef = useRef<HTMLInputElement>(null);
-  const PhoneNumRef = useRef<HTMLInputElement>(null);
-  const EmailRef = useRef<HTMLInputElement>(null);
-  const [selectedValue, setSelectedValue] = useState<string>("");
-  const [submited, setSubmited] = useState<boolean>(false);
+  const t = useTranslations("FormContent");
 
-  const t = useTranslations("ApplyForm");
-
-  const onSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-
-    const selectedRef =
-      selectedValue === "Private Client" || selectedValue === "პირადი კლიენტი"
-        ? RadioPrivateRef.current
-        : RadioCorporateRef.current;
-
-    if (
-      selectedRef &&
-      FirstNameRef.current &&
-      LastNameRef.current &&
-      PhoneNumRef.current &&
-      EmailRef.current
-    ) {
-      const submitedForm = {
-        client: selectedRef.value,
-        firstName: FirstNameRef.current.value,
-        lastName: LastNameRef.current.value,
-        phoneNumber: PhoneNumRef.current.value,
-        email: EmailRef.current.value,
-      };
-
-      console.log(submitedForm);
-      setSubmited(true);
-    }
-  };
+  const {
+    FirstNameRef,
+    LastNameRef,
+    PhoneNumRef,
+    EmailRef,
+    RadioCorporateRef,
+    RadioPrivateRef,
+    setSelectedValue,
+    submited,
+    onSubmit,
+    warning,
+  } = useForm();
 
   const handleRadioChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSelectedValue(event.target.value);
@@ -81,7 +58,7 @@ const ApplyForm: React.FC<ApllyFormProps> = ({ onClose }) => {
             row
             aria-labelledby="demo-row-radio-buttons-group-label"
             name="row-radio-buttons-group"
-            value={selectedValue}
+            defaultValue={t("radioPrivate")}
             onChange={handleRadioChange}
             className="radioGroup"
           >
@@ -104,9 +81,9 @@ const ApplyForm: React.FC<ApllyFormProps> = ({ onClose }) => {
           />
           <Box mt={"16px"}>
             <BtnComponent
-              bgColor="#3D6ECF"
+              content={warning ? t("warning") : t("submit")}
+              bgColor={warning ? "red" : "#3D6ECF"}
               color="#fff"
-              content={t("submit")}
               variant="contained"
             />
           </Box>

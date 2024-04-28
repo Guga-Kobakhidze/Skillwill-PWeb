@@ -1,9 +1,9 @@
-import { Box, Typography } from "@mui/material";
-import { FooterBox } from "./FooterStyle";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 import Nav from "../header/Nav";
+import { Box, Typography } from "@mui/material";
+import { FooterBox } from "./FooterStyle";
 import { useTranslations } from "next-intl";
 
 const Footer = () => {
