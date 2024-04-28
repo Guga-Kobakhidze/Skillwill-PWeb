@@ -2,11 +2,11 @@
 
 import { Box, Checkbox, FormControlLabel, FormGroup } from "@mui/material";
 import { useTranslations } from "next-intl";
-import React, { useRef, useState } from "react";
-import InputForm from "../Forms/InputForm";
+import React from "react";
 import Link from "next/link";
 import BtnComponent from "../buttons/BtnComponent";
 import useForm from "@/hooks/useForm";
+import InputForm from "../forms/InputForm";
 
 const ContactForm = () => {
   const t = useTranslations("FormContent");
@@ -27,7 +27,7 @@ const ContactForm = () => {
   };
 
   return (
-    <Box component={"form"} onSubmit={onSubmit} mt={1}>
+    <Box component={"form"} onSubmit={onSubmit} mt={1} width={"100%"}>
       <InputForm
         email={EmailRef}
         firstName={FirstNameRef}

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import BtnComponent from "../buttons/BtnComponent";
 import { Box } from "@mui/material";
 import ApplyForm from "./ApplyForm";

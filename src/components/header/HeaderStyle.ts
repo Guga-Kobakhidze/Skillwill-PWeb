@@ -49,7 +49,7 @@ export const HeaderContentBox: SxProps = {
   ".navigation": {
     ...FlexBox,
     gap: "25px",
-    cursor: 'pointer',
+    cursor: "pointer",
 
     a: {
       fontFamily: "RocRegular",
