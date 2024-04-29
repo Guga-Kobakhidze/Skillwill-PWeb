@@ -24,7 +24,7 @@ export const HeaderBox: SxProps = {
       margin: 0,
     },
 
-    "button:first-child": {
+    ".btnBox": {
       position: "relative",
       paddingRight: "2px",
       marginRight: "2px",
@@ -49,7 +49,7 @@ export const HeaderContentBox: SxProps = {
   ".navigation": {
     ...FlexBox,
     gap: "25px",
-    cursor: 'pointer',
+    cursor: "pointer",
 
     a: {
       fontFamily: "RocRegular",

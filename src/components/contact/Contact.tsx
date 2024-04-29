@@ -10,8 +10,8 @@ const Contact = () => {
   return (
     <Box sx={{ ...ContactBox }} id="contact">
       <Box className="container contactBox">
-        <Box className="FormContent">
-          <Typography className="title">{t("contactTitle")}</Typography>
+        <Box className="FormContent titleContainer">
+          <Typography className="mainTitle">{t("contactTitle")}</Typography>
           <Typography className="paragraph">{t("contactDesc")}</Typography>
           <ContactForm />
         </Box>

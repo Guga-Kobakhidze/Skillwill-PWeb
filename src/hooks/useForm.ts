@@ -83,9 +83,7 @@ const useForm = () => {
 
       if (selectedRef) SubmitedForm.client = selectedRef.value;
 
-      checked
-        ? (SubmitedForm.checked = "agreed")
-        : (SubmitedForm.checked = "disagreed");
+      if (checked) SubmitedForm.checked = "agreed";
 
       console.log(SubmitedForm);
       setSubmited(true);
