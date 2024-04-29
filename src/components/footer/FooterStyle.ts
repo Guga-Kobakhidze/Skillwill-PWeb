@@ -14,6 +14,11 @@ export const FooterBox: SxProps = {
     borderBottom: "1px solid rgba(255, 255, 255, 0.3)",
     marginBottom: "33px",
 
+    "@media (max-width: 767px)": {
+      paddingBottom: "48px",
+      marginBottom: "25px",
+    },
+
     a: {
       cursor: "pointer",
       transition: "0.3s",
@@ -32,15 +37,32 @@ export const FooterBox: SxProps = {
     a: {
       color: "white",
     },
+
+    "@media (max-width: 767px)": {
+      flexDirection: "column",
+      alignItems: "center",
+    },
   },
 
   ".copyright": {
     display: "flex",
     justifyContent: "space-between",
 
+    "@media (max-width: 900px)": {
+      flexDirection: "column-reverse",
+      alignItems: "center",
+      gap: "32px",
+    },
+
     div: {
       display: "flex",
       gap: "24px",
+
+      "@media (max-width: 767px)": {
+        flexDirection: "column",
+        alignItems: "center",
+        gap: "16px",
+      },
 
       a: {
         textDecoration: "underline",
