@@ -1,11 +1,16 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import { Button } from "@mui/material";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { LanguageBtnProps } from "../../interfaces/interfaces";
+import useLocalStorage from "@/hooks/useLocaleStorage";
 
-const LanguageBtn: React.FC<LanguageBtnProps> = ({ content, languageCode }) => {
+const LanguageBtn: React.FC<LanguageBtnProps> = ({
+  content,
+  languageCode,
+  bold,
+}) => {
   const router = useRouter();
 
   const handleLanguageChange = () => {
@@ -15,7 +20,7 @@ const LanguageBtn: React.FC<LanguageBtnProps> = ({ content, languageCode }) => {
   return (
     <Button
       variant="text"
-      sx={{ color: "black", fontFamily: "RocRegular" }}
+      sx={{ color: "black", fontFamily: "RocRegular", fontWeight: bold }}
       onClick={handleLanguageChange}
     >
       {content}

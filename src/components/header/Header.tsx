@@ -7,9 +7,13 @@ import LanguageBtn from "../buttons/LanguageBtn";
 import { Box, ButtonGroup } from "@mui/material";
 import { HeaderBox, HeaderContentBox } from "./HeaderStyle";
 import BurgerMenu from "../burger/BurgerMenu";
+import { usePathname, useRouter } from "next/navigation";
+import useLocalStorage from "@/hooks/useLocaleStorage";
+import useLanguage from "@/hooks/useLanguage";
 
 const Header = () => {
   const [burgerMenu, setBurgerMenu] = useState<boolean>(false);
+  const { language } = useLanguage();
 
   useEffect(() => {
     const handleResize = () => {
@@ -36,8 +40,20 @@ const Header = () => {
           <Image width={63} height={27} src="assets/logo.svg" alt="Logo" />
           <Nav />
           <ButtonGroup className="btnGroup">
-            <LanguageBtn content="GEO" languageCode="ge" />
-            <LanguageBtn content="ENG" languageCode="en" />
+            <Box className="btnBox">
+              <LanguageBtn
+                content="GEO"
+                languageCode="ge"
+                bold={language === "GE" ? "bold" : ""}
+              />
+            </Box>
+            <Box>
+              <LanguageBtn
+                content="ENG"
+                languageCode="en"
+                bold={language === "EN" ? "bold" : ""}
+              />
+            </Box>
           </ButtonGroup>
         </Box>
       )}

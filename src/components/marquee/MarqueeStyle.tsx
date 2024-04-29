@@ -37,4 +37,8 @@ export const MarqueeBox = styled(Box)({
       },
     },
   },
+
+  "@media (max-width: 1240px)": {
+    marginBottom: "32px",
+  },
 });

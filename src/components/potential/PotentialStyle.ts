@@ -12,10 +12,16 @@ export const PotentialContent: SxProps = {
     borderRadius: "12px",
     overflow: "hidden",
   },
+
+  "@media (max-width: 1240px)": {
+    flexDirection: "column",
+    gap: "48px",
+    marginBottom: "64px",
+  },
 };
 
 export const PotentialBox: SxProps = {
-  maxWidth: 580,
+  width: "100%",
 
   h3: {
     fontFamily: "RocBold",

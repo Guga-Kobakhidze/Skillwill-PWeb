@@ -53,12 +53,9 @@ const Supporting = () => {
             </Box>
           </Box>
         </Box>
-        <Image
-          width={600}
-          height={600}
-          src="assets/Placeholder.svg"
-          alt="Logo"
-        />
+        <Box className="imageBox">
+          <img src="assets/Placeholder.png" alt="Logo" />
+        </Box>
       </Box>
     </Box>
   );

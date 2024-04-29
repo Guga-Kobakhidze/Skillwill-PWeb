@@ -24,7 +24,7 @@ export const HeaderBox: SxProps = {
       margin: 0,
     },
 
-    "button:first-child": {
+    ".btnBox": {
       position: "relative",
       paddingRight: "2px",
       marginRight: "2px",

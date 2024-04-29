@@ -39,18 +39,15 @@ export const BurgerBox: SxProps = {
     display: "flex",
     flexDirection: "column",
 
-    div: {
+    ".langBox": {
       display: "flex",
+      justifyContent: "space-between",
       alignItems: "center",
       paddingBottom: "8px",
       borderBottom: "1px solid rgba(0, 0, 0, 0.2)",
-
-      button: {
-        marginTop: "5px",
-      },
     },
 
-    "div:first-child": {
+    ".firstChild": {
       marginBottom: "8px",
     },
   },

@@ -15,7 +15,7 @@ import { ApllyFormProps } from "../../interfaces/interfaces";
 import BtnComponent from "../buttons/BtnComponent";
 import Success from "./Success";
 import { useTranslations } from "next-intl";
-import InputForm from "../Forms/InputForm";
+import InputForm from "../forms/InputForm";
 import useForm from "@/hooks/useForm";
 
 const ApplyForm: React.FC<ApllyFormProps> = ({ onClose }) => {
