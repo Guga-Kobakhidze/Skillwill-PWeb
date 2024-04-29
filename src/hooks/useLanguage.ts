@@ -5,13 +5,13 @@ import useLocalStorage from "./useLocaleStorage";
 const useLanguage = () => {
   const path = usePathname();
 
-  const [language, setLanguage] = useLocalStorage("language", "GE");
+  const [language, setLanguage] = useLocalStorage("language", "EN");
 
   useEffect(() => {
-    if (path === "/ge") {
-      setLanguage("GE");
-    } else {
+    if (path === "/en") {
       setLanguage("EN");
+    } else {
+      setLanguage("GE");
     }
   }, [language, path]);
 

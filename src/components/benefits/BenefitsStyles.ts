@@ -5,14 +5,19 @@ export const BenefitsBoxStyle: SxProps = {
   justifyContent: "center",
   flexDirection: "column",
   alignItems: "center",
-  gap: "80px",
   marginBottom: "112px",
+  gap: "80px",
 
   ".mainTitle": {
     fontWeight: 700,
     fontSize: "2.9rem",
     lineHeight: "3.6rem",
     fontFamily: "RocBold",
+
+    "@media (max-width: 767px)": {
+      fontSize: "32px",
+      fontWeight: 500,
+    },
   },
 
   "@media (max-width: 1240px)": {
@@ -34,6 +39,10 @@ export const sinleBenefitBox: SxProps = {
     height: "96px",
     display: "flex",
     alignItems: "start",
+
+    "@media (max-width: 767px)": {
+      height: "auto",
+    },
   },
 };
 

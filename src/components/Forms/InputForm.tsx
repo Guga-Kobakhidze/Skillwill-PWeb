@@ -12,7 +12,7 @@ const InputForm: React.FC<InputFormProps> = ({
   const t = useTranslations("FormContent");
 
   return (
-    <Box>
+    <Box className="formBox">
       <Box className="fullName">
         <TextField
           label={t("firstName")}
