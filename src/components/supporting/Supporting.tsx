@@ -1,5 +1,7 @@
-import { Box, Typography } from "@mui/material";
 import React from "react";
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import { Box, Typography } from "@mui/material";
+import { useTranslations } from "next-intl";
 import {
   check,
   checkContent,
@@ -9,9 +11,6 @@ import {
   supportingTexts,
   Title,
 } from "./SupportingStyles";
-import { useTranslations } from "next-intl";
-import CheckCircleIcon from "@mui/icons-material/CheckCircle";
-import Image from "next/image";
 
 const Supporting = () => {
   const t = useTranslations("Supporting");

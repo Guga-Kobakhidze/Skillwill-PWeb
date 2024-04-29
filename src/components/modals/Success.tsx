@@ -1,9 +1,9 @@
+import React from "react";
+import Image from "next/image";
+import BtnComponent from "../buttons/BtnComponent";
 import { Box, Typography } from "@mui/material";
 import { useTranslations } from "next-intl";
 import { SuccessBox } from "./ModalsStyle";
-import Image from "next/image";
-import React from "react";
-import BtnComponent from "../buttons/BtnComponent";
 
 const Success: React.FC<{ onClose: () => void }> = ({ onClose }) => {
   const t = useTranslations("Success");
