@@ -40,6 +40,7 @@ export const BurgerBox: SxProps = {
 
     a: {
       display: "inline-block",
+      fontSize: "14px",
       paddingBottom: "15px",
       borderBottom: "1px solid rgba(0, 0, 0, 0.2)",
       marginBottom: "20px",
@@ -57,6 +58,10 @@ export const BurgerBox: SxProps = {
       alignItems: "center",
       paddingBottom: "8px",
       borderBottom: "1px solid rgba(0, 0, 0, 0.2)",
+
+      button: {
+        fontSize: "12px",
+      },
     },
 
     ".firstChild": {

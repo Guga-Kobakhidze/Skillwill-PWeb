@@ -8,6 +8,14 @@ const Absolute: SxProps = {
   zIndex: 20,
 };
 
+const AbsoluteMobile: SxProps = {
+  position: "fixed",
+  left: 0,
+  right: 0,
+  bottom: 0,
+  zIndex: 20,
+};
+
 export const OverLayStyle: SxProps = {
   ...Absolute,
   top: 0,
@@ -21,10 +29,17 @@ export const OverLayStyle: SxProps = {
 };
 
 export const ApplyFormBox: SxProps = {
-  ...Absolute,
   padding: "30px 40px",
   backgroundColor: "#fff",
   borderRadius: "6px",
+
+  "@media (max-width: 1070px)": {
+    width: "550px",
+  },
+
+  "@media (min-width: 540px)": {
+    ...Absolute,
+  },
 
   fieldset: {
     borderRadius: "12px",
@@ -64,6 +79,39 @@ export const ApplyFormBox: SxProps = {
     right: "18px",
     top: "16.5px",
   },
+
+  "@media (max-width: 539px)": {
+    ...AbsoluteMobile,
+    padding: "30px 20px",
+    width: "100%",
+
+    ".closeBtn": {
+      display: "none",
+    },
+
+    h4: {
+      fontSize: "32px",
+    },
+
+    h6: {
+      fontSize: "16px",
+    },
+
+    ".radioGroup, .fullName, h6": {
+      marginBottom: "16px",
+    },
+
+    ".btnBox": {
+      marginTop: 0,
+    },
+  },
+
+  "@media (max-width: 400px)": {
+    ".radioGroup": {
+      gap: 0,
+      justifyContent: "space-between",
+    },
+  },
 };
 
 export const SuccessBox: SxProps = {
@@ -89,5 +137,11 @@ export const SuccessBox: SxProps = {
 
   button: {
     width: "260px",
+  },
+
+  "@media (max-width: 539px)": {
+    h4: {
+      fontSize: "32px",
+    },
   },
 };

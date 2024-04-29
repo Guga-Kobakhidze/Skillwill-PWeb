@@ -18,6 +18,14 @@ export const PotentialContent: SxProps = {
     gap: "48px",
     marginBottom: "64px",
   },
+
+  "@media (max-width: 767px)": {
+    marginTop: "100px",
+
+    ".VideoBox": {
+      height: "348px",
+    },
+  },
 };
 
 export const PotentialBox: SxProps = {
@@ -33,5 +41,17 @@ export const PotentialBox: SxProps = {
   ".paragraph": {
     fontFamily: "RocRegular",
     marginBottom: "22px",
+  },
+
+  "@media (max-width: 767px)": {
+    h3: {
+      fontSize: "32px",
+      fontWeight: 500,
+      marginBottom: "20px",
+    },
+
+    "button, .paragraph": {
+      fontSize: "1rem",
+    },
   },
 };

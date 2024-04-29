@@ -75,4 +75,14 @@ export const FooterBox: SxProps = {
       },
     },
   },
+
+  "@media (max-width: 767px)": {
+    padding: "48px 0",
+
+    ".copyright": {
+      "a, p": {
+        fontSize: "14px",
+      },
+    },
+  },
 };

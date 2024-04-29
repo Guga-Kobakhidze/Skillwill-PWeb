@@ -78,7 +78,7 @@ const ApplyForm: React.FC<ApllyFormProps> = ({ onClose }) => {
             phoneNumber={PhoneNumRef}
             email={EmailRef}
           />
-          <Box mt={"16px"}>
+          <Box className="btnBox" mt={"16px"}>
             <BtnComponent
               content={warning ? t("warning") : t("submit")}
               bgColor={warning ? "red" : "#3D6ECF"}
