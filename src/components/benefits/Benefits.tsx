@@ -2,19 +2,19 @@ import { Box, Typography } from "@mui/material";
 import { useTranslations } from "next-intl";
 import React from "react";
 import SingleBenefit from "./SingleBenefit";
-import { benefitsBox } from "./BenefitsStyles";
+import { benefitsBox, BenefitsBoxStyle } from "./BenefitsStyles";
 
 const Benefits = () => {
   const t = useTranslations("Benefits");
+
   return (
     <Box className="container">
       <Box
         id="benefits"
-        className="box"
-        // pt={"112px"}
-        sx={{ flexDirection: "column" }}
+        className="titleContainer"
+        sx={{ ...BenefitsBoxStyle }}
       >
-        <Typography className="title">{t("title")}</Typography>
+        <Typography className="mainTitle">{t("title")}</Typography>
         <Box sx={{ ...benefitsBox }}>
           <SingleBenefit
             img="assets/assuarence.svg"

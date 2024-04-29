@@ -7,9 +7,11 @@ import Nav from "../header/Nav";
 import LanguageBtn from "../buttons/LanguageBtn";
 import { OverLayStyle } from "../modals/ModalsStyle";
 import { BurgerBox } from "./BurgerMenuStyle";
+import useLanguage from "@/hooks/useLanguage";
 
 const BurgerMenu = () => {
   const [menu, setMenu] = useState<boolean>(false);
+  const { language } = useLanguage();
 
   const onClick = () => {
     setMenu(!menu);
@@ -35,13 +37,33 @@ const BurgerMenu = () => {
             <Nav onClose={onClick} />
           </Box>
           <ButtonGroup className="burgerBtnGroup">
-            <Box>
-              <Image width={24} height={17} src="assets/GE.svg" alt="Logo" />
-              <LanguageBtn content="Georgian" languageCode="ge" />
+            <Box className="langBox firstChild">
+              <Box>
+                <Image width={24} height={17} src="assets/GE.svg" alt="Logo" />
+                <LanguageBtn content="Georgian" languageCode="ge" />
+              </Box>
+              {language === "GE" && (
+                <Image
+                  width={17}
+                  height={12}
+                  src="assets/checked.svg"
+                  alt="Logo"
+                />
+              )}
             </Box>
-            <Box>
-              <Image width={24} height={17} src="assets/GB.svg" alt="Logo" />
-              <LanguageBtn content="English" languageCode="en" />
+            <Box className="langBox">
+              <Box>
+                <Image width={24} height={17} src="assets/GB.svg" alt="Logo" />
+                <LanguageBtn content="English" languageCode="en" />
+              </Box>
+              {language === "EN" && (
+                <Image
+                  width={17}
+                  height={12}
+                  src="assets/checked.svg"
+                  alt="Logo"
+                />
+              )}
             </Box>
           </ButtonGroup>
         </Box>

@@ -33,6 +33,7 @@ export interface ButtonProps {
 export interface LanguageBtnProps {
   content: string;
   languageCode: string;
+  bold?: string;
   isActive?: boolean;
 }
 

@@ -5,8 +5,26 @@ export const SupportingBox: SxProps = {
   justifyContent: "center",
   alignItems: "center",
   gap: "100px",
-  //   maxWidth: 650,
   marginBottom: "112px",
+
+  "@media (max-width: 1340px)": {
+    gap: "20px",
+  },
+
+  "@media (max-width: 1240px)": {
+    flexDirection: "column",
+    gap: "56px",
+    marginBottom: "32px",
+
+    ".imageBox": {
+      width: "100%",
+
+      img: {
+        width: "100%",
+        height: "700px",
+      },
+    },
+  },
 };
 
 export const Title: SxProps = {

@@ -15,6 +15,18 @@ export const ContactBox: SxProps = {
       flexDirection: "column",
       alignItems: "start",
       gap: "24px",
+
+      ".mainTitle": {
+        fontWeight: 700,
+        fontSize: "2.9rem",
+        lineHeight: "3.6rem",
+        fontFamily: "RocBold",
+      },
+
+      "@media (max-width: 1240px)": {
+        alignItems: "center",
+        textAlign: "center",
+      },
     },
   },
 
