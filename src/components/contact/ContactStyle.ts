@@ -26,6 +26,16 @@ export const ContactBox: SxProps = {
       "@media (max-width: 1240px)": {
         alignItems: "center",
         textAlign: "center",
+
+        form: {
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "start",
+
+          ".formBox": {
+            width: "100%",
+          },
+        },
       },
     },
   },
@@ -60,6 +70,31 @@ export const ContactBox: SxProps = {
 
       "&:hover": {
         opacity: 0.6,
+      },
+    },
+  },
+
+  "@media (max-width: 767px)": {
+    padding: "48px 0",
+
+    ".contactBox": {
+      ".FormContent": {
+        gap: "12px",
+
+        ".mainTitle": {
+          fontSize: "32px",
+        },
+
+        ".paragraph": {
+          fontSize: "14px",
+          marginBottom: "10px",
+        },
+
+        form: {
+          button: {
+            fontSize: "18px",
+          },
+        },
       },
     },
   },

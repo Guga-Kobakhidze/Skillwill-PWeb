@@ -22,6 +22,11 @@ export const SupportingBox: SxProps = {
       img: {
         width: "100%",
         height: "700px",
+
+        "@media (max-width: 767px)": {
+          height: "348px",
+          marginBottom: "32px",
+        },
       },
     },
   },
@@ -33,6 +38,12 @@ export const Title: SxProps = {
   lineHeight: "3.6rem",
   marginBottom: "12px",
   fontFamily: "RocBold",
+
+  "@media (max-width: 767px)": {
+    fontSize: "32px",
+    fontWeight: 500,
+    lineHeight: "120%",
+  },
 };
 
 export const paragraph: SxProps = {
@@ -42,6 +53,12 @@ export const paragraph: SxProps = {
   fontSize: "18px",
   margin: "12px 0 32px 0",
   lineHeight: "27px",
+
+  "@media (max-width: 767px)": {
+    fontSize: "14px",
+    lineHeight: "150%",
+    marginBottom: "20px",
+  },
 };
 
 export const supportingTexts: SxProps = {
@@ -53,6 +70,10 @@ export const check: SxProps = {
   display: "flex",
   gap: "14px",
   alignItems: "center",
+
+  "@media (max-width: 767px)": {
+    alignItems: "start",
+  },
 };
 
 export const checkContent: SxProps = {
@@ -67,4 +88,8 @@ export const checkText: SxProps = {
   lineHeight: "1.5rem",
   fontWeight: "400",
   color: "#1A1919",
+
+  "@media (max-width: 767px)": {
+    fontSize: "14px",
+  },
 };

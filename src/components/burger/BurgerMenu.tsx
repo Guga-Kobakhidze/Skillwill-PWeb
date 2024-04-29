@@ -44,8 +44,8 @@ const BurgerMenu = () => {
               </Box>
               {language === "GE" && (
                 <Image
-                  width={17}
-                  height={12}
+                  width={17.5}
+                  height={12.5}
                   src="assets/checked.svg"
                   alt="Logo"
                 />
@@ -58,8 +58,8 @@ const BurgerMenu = () => {
               </Box>
               {language === "EN" && (
                 <Image
-                  width={17}
-                  height={12}
+                  width={17.5}
+                  height={12.5}
                   src="assets/checked.svg"
                   alt="Logo"
                 />
