@@ -1,4 +1,15 @@
-import { SxProps } from "@mui/material";
+import { SxProps, keyframes } from "@mui/material";
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+    transform: translateX(328px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+`;
 
 export const BurgerBox: SxProps = {
   position: "fixed",
@@ -13,6 +24,7 @@ export const BurgerBox: SxProps = {
   display: "flex",
   flexDirection: "column",
   justifyContent: "space-between",
+  animation: `${fadeIn} 0.5s`,
 
   ".closeBtn": {
     position: "absolute",
