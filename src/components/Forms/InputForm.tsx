@@ -1,7 +1,7 @@
+import React from "react";
 import { InputFormProps } from "@/interfaces/interfaces";
 import { Box, TextField } from "@mui/material";
 import { useTranslations } from "next-intl";
-import React from "react";
 
 const InputForm: React.FC<InputFormProps> = ({
   firstName,

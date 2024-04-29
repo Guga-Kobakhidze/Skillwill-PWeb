@@ -1,8 +1,7 @@
-import { Benefits } from "@/interfaces/interfaces";
-import { Box, Typography } from "@mui/material";
-import { useTranslations } from "next-intl";
 import Image from "next/image";
 import React from "react";
+import { Benefits } from "@/interfaces/interfaces";
+import { Box, Typography } from "@mui/material";
 import { sinleBenefitBox, titleSm } from "./BenefitsStyles";
 
 const SingleBenefit: React.FC<Benefits> = ({ title, paragraph, img }) => {

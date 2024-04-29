@@ -1,15 +1,13 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
 import Nav from "./Nav";
 import Image from "next/image";
 import LanguageBtn from "../buttons/LanguageBtn";
+import BurgerMenu from "../burger/BurgerMenu";
+import useLanguage from "@/hooks/useLanguage";
+import React, { useEffect, useState } from "react";
 import { Box, ButtonGroup } from "@mui/material";
 import { HeaderBox, HeaderContentBox } from "./HeaderStyle";
-import BurgerMenu from "../burger/BurgerMenu";
-import { usePathname, useRouter } from "next/navigation";
-import useLocalStorage from "@/hooks/useLocaleStorage";
-import useLanguage from "@/hooks/useLanguage";
 
 const Header = () => {
   const [burgerMenu, setBurgerMenu] = useState<boolean>(false);

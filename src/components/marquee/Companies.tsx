@@ -1,7 +1,7 @@
-import { MarqueeCompaniesProps } from "@/interfaces/interfaces";
-import { Box } from "@mui/material";
 import Image from "next/image";
 import React from "react";
+import { MarqueeCompaniesProps } from "@/interfaces/interfaces";
+import { Box } from "@mui/material";
 
 const Companies: React.FC<MarqueeCompaniesProps> = ({ data }) => {
   return (

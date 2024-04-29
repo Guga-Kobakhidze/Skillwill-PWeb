@@ -1,8 +1,8 @@
+import React from "react";
+import ApplyModal from "../modals/ApplyModal";
 import { Box, Typography } from "@mui/material";
 import { useTranslations } from "next-intl";
 import { PotentialBox, PotentialContent } from "./PotentialStyle";
-import React from "react";
-import ApplyModal from "../modals/ApplyModal";
 
 const Potential = () => {
   const t = useTranslations("Potential");

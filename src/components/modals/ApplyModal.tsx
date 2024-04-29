@@ -1,11 +1,11 @@
 "use client";
 
 import React, { useState } from "react";
-import BtnComponent from "../buttons/BtnComponent";
 import { Box } from "@mui/material";
-import ApplyForm from "./ApplyForm";
 import { OverLayStyle } from "./ModalsStyle";
 import { ApplyModalProps } from "../../interfaces/interfaces";
+import BtnComponent from "../buttons/BtnComponent";
+import ApplyForm from "./ApplyForm";
 
 const ApplyModal: React.FC<ApplyModalProps> = ({ btnContent }) => {
   const [showModal, setShowModal] = useState<boolean>(false);

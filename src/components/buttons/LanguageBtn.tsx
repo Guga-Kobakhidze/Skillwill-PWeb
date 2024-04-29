@@ -1,10 +1,9 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React from "react";
 import { Button } from "@mui/material";
-import { usePathname, useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { LanguageBtnProps } from "../../interfaces/interfaces";
-import useLocalStorage from "@/hooks/useLocaleStorage";
 
 const LanguageBtn: React.FC<LanguageBtnProps> = ({
   content,

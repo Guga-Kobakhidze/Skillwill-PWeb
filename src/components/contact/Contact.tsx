@@ -1,6 +1,6 @@
-import { Box, Typography } from "@mui/material";
 import React from "react";
 import ContactForm from "./ContactForm";
+import { Box, Typography } from "@mui/material";
 import { useTranslations } from "next-intl";
 import { ContactBox } from "./ContactStyle";
 

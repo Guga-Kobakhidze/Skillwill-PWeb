@@ -1,7 +1,7 @@
-import { Box, Typography } from "@mui/material";
-import { useTranslations } from "next-intl";
 import React from "react";
 import SingleBenefit from "./SingleBenefit";
+import { Box, Typography } from "@mui/material";
+import { useTranslations } from "next-intl";
 import { benefitsBox, BenefitsBoxStyle } from "./BenefitsStyles";
 
 const Benefits = () => {

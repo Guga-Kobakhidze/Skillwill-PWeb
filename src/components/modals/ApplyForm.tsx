@@ -1,22 +1,21 @@
 "use client";
 
-import React, { useRef, useState } from "react";
+import React from "react";
 import Image from "next/image";
+import BtnComponent from "../buttons/BtnComponent";
+import Success from "./Success";
+import InputForm from "../forms/InputForm";
+import useForm from "@/hooks/useForm";
+import { ApplyFormBox } from "./ModalsStyle";
+import { ApllyFormProps } from "../../interfaces/interfaces";
+import { useTranslations } from "next-intl";
 import {
   Box,
   FormControlLabel,
   Radio,
   RadioGroup,
-  TextField,
   Typography,
 } from "@mui/material";
-import { ApplyFormBox } from "./ModalsStyle";
-import { ApllyFormProps } from "../../interfaces/interfaces";
-import BtnComponent from "../buttons/BtnComponent";
-import Success from "./Success";
-import { useTranslations } from "next-intl";
-import InputForm from "../forms/InputForm";
-import useForm from "@/hooks/useForm";
 
 const ApplyForm: React.FC<ApllyFormProps> = ({ onClose }) => {
   const t = useTranslations("FormContent");
