@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 import BtnComponent from "../buttons/BtnComponent";
 import Success from "./Success";
-import InputForm from "../forms/InputForm";
+import InputForm from "../Forms/InputForm";
 import useForm from "@/hooks/useForm";
 import { ApplyFormBox } from "./ModalsStyle";
 import { ApllyFormProps } from "../../interfaces/interfaces";
