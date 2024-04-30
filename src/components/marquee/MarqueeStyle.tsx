@@ -36,6 +36,16 @@ export const MarqueeBox = styled(Box)({
         margin: "0 40px",
       },
     },
+
+    "@media (max-width: 768px)": {
+      ".logos-slide": {
+        animation: `${ScrollerMaruee} 30s linear infinite`,
+
+        img: {
+          margin: "0 20px",
+        },
+      },
+    },
   },
 
   "@media (max-width: 1240px)": {
