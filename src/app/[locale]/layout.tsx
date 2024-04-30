@@ -1,3 +1,4 @@
+
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -19,11 +20,10 @@ export default function LocaleLayout({
   params: { locale },
 }: Readonly<RootLayoutProps>) {
   const messages = useMessages();
-
   return (
     <html lang={locale}>
       <body>
-        <NextIntlClientProvider locale={locale} messages={messages}>
+        <NextIntlClientProvider messages={messages}>
           <Box className="mainContent">
             <Header />
             {children}

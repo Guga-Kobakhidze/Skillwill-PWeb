@@ -1,9 +1,10 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import { Button } from "@mui/material";
 import { useRouter } from "next/navigation";
 import { LanguageBtnProps } from "../../interfaces/interfaces";
+import {useLocale} from 'next-intl';
 
 const LanguageBtn: React.FC<LanguageBtnProps> = ({
   content,
@@ -11,6 +12,11 @@ const LanguageBtn: React.FC<LanguageBtnProps> = ({
   bold,
 }) => {
   const router = useRouter();
+
+  const locale = useLocale();
+
+  console.log(locale)
+
 
   const handleLanguageChange = () => {
     router.push(`/${languageCode}`);
