@@ -1,6 +1,7 @@
 "use client";
 
 import { Box, keyframes } from "@mui/material";
+import zIndex from "@mui/material/styles/zIndex";
 import { styled } from "@mui/system";
 
 const ScrollerMaruee = keyframes`
@@ -40,6 +41,7 @@ export const MarqueeBox = styled(Box)({
     "@media (max-width: 768px)": {
       ".logos-slide": {
         animation: `${ScrollerMaruee} 30s linear infinite`,
+        zIndex: 10,
 
         img: {
           margin: "0 20px",
