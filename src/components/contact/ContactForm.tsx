@@ -6,7 +6,7 @@ import BtnComponent from "../buttons/BtnComponent";
 import useForm from "@/hooks/useForm";
 import { Box, Checkbox, FormControlLabel, FormGroup } from "@mui/material";
 import { useTranslations } from "next-intl";
-import InputForm from "../Forms/InputForm";
+import InputForm from "../forms/InputForm";
 
 const ContactForm = () => {
   const t = useTranslations("FormContent");
