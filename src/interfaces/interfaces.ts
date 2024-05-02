@@ -24,7 +24,6 @@ export interface ButtonProps {
   variant: ButtonVariant;
   content: string;
   bgColor: string;
-  color: string;
   onClick?: () => void;
 }
 

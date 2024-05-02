@@ -24,6 +24,11 @@ export const PotentialContent: SxProps = {
 
     ".VideoBox": {
       height: "348px",
+
+      iframe: {
+        height: "100%",
+        objectFit: "center",
+      },
     },
   },
 };

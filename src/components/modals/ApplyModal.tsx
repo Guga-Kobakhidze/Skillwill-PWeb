@@ -24,7 +24,6 @@ const ApplyModal: React.FC<ApplyModalProps> = ({ btnContent }) => {
         content={btnContent}
         variant="contained"
         bgColor="#3D6ECF"
-        color="#fff"
         onClick={onToggle}
       />
     </Box>

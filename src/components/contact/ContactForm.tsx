@@ -4,9 +4,9 @@ import React from "react";
 import Link from "next/link";
 import BtnComponent from "../buttons/BtnComponent";
 import useForm from "@/hooks/useForm";
+import InputForm from "../forms/InputForm";
 import { Box, Checkbox, FormControlLabel, FormGroup } from "@mui/material";
 import { useTranslations } from "next-intl";
-import InputForm from "../forms/InputForm";
 
 const ContactForm = () => {
   const t = useTranslations("FormContent");
@@ -54,7 +54,6 @@ const ContactForm = () => {
       <BtnComponent
         content={warning ? t("warning") : t("submit")}
         bgColor={warning ? "red" : "#3D6ECF"}
-        color="#fff"
         variant="contained"
       />
     </Box>

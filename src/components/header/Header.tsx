@@ -38,20 +38,17 @@ const Header = () => {
           <Image width={63} height={27} src="assets/logo.svg" alt="Logo" />
           <Nav />
           <ButtonGroup className="btnGroup">
-            <Box className="btnBox">
-              <LanguageBtn
-                content="GEO"
-                languageCode="ge"
-                bold={language === "GE" ? "bold" : ""}
-              />
-            </Box>
-            <Box>
-              <LanguageBtn
-                content="ENG"
-                languageCode="en"
-                bold={language === "EN" ? "bold" : ""}
-              />
-            </Box>
+            <LanguageBtn
+              content="GEO"
+              languageCode="ge"
+              bold={language === "GE" ? "bold" : ""}
+            />
+            <Box className="btnLine"></Box>
+            <LanguageBtn
+              content="ENG"
+              languageCode="en"
+              bold={language === "EN" ? "bold" : ""}
+            />
           </ButtonGroup>
         </Box>
       )}

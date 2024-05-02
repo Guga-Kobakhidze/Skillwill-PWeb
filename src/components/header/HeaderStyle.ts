@@ -18,26 +18,21 @@ export const HeaderBox: SxProps = {
 
   ".btnGroup": {
     ...FlexBox,
+    position: "relative",
 
     button: {
       padding: 0,
       margin: 0,
     },
 
-    ".btnBox": {
-      position: "relative",
-      paddingRight: "2px",
-      marginRight: "2px",
-
-      "&::after": {
-        content: "''",
-        position: "absolute",
-        right: 0,
-        bottom: "6px",
-        height: "60%",
-        width: "1px",
-        background: "rgba(0, 0, 0, 0.5)",
-      },
+    ".btnLine": {
+      position: "absolute",
+      top: "50%",
+      left: "50%",
+      transform: "translate(-50%, -50%)",
+      height: "15px",
+      width: "1px",
+      background: "rgba(0, 0, 0, 0.5)",
     },
   },
 };

@@ -1,7 +1,7 @@
 import { SxProps } from "@mui/material";
 
-export const BtnStyle = (color: string, bgColor: string): SxProps => ({
-  color: color,
+export const BtnStyle = (bgColor: string): SxProps => ({
+  color: "#fff",
   backgroundColor: bgColor,
   fontFamily: "RocRegular",
   fontWeight: "100",
@@ -11,6 +11,6 @@ export const BtnStyle = (color: string, bgColor: string): SxProps => ({
 
   "&:hover": {
     backgroundColor: bgColor,
-    color: color,
+    color: "#fff",
   },
 });

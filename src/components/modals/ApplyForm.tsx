@@ -82,7 +82,6 @@ const ApplyForm: React.FC<ApllyFormProps> = ({ onClose }) => {
             <BtnComponent
               content={warning ? t("warning") : t("submit")}
               bgColor={warning ? "red" : "#3D6ECF"}
-              color="#fff"
               variant="contained"
             />
           </Box>

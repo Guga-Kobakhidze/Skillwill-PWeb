@@ -15,7 +15,6 @@ const Success: React.FC<{ onClose: () => void }> = ({ onClose }) => {
       <Typography className="paragraph">{t("message")}</Typography>
       <BtnComponent
         bgColor="#3D6ECF"
-        color="#fff"
         content={t("btn")}
         variant="contained"
         onClick={onClose}
