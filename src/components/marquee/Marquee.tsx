@@ -1,6 +1,6 @@
 import React from "react";
 import Companies from "./Companies";
-import { LogosData, LogosDatas } from "@/data/LogosData";
+import { LogosData } from "@/data/LogosData";
 import { Box, Typography } from "@mui/material";
 import { MarqueeBox } from "./MarqueeStyle";
 
@@ -13,7 +13,6 @@ const Marquee = () => {
       <Box className="container">
         <Box className="Logos">
           <Companies data={LogosData} />
-          <Companies data={LogosDatas} />
         </Box>
       </Box>
     </MarqueeBox>

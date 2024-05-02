@@ -1,17 +1,16 @@
 "use client";
 
 import { Box, keyframes } from "@mui/material";
-import zIndex from "@mui/material/styles/zIndex";
 import { styled } from "@mui/system";
 
-const ScrollerMaruee = keyframes`
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-`;
+// const ScrollerMaruee = keyframes`
+//   from {
+//     transform: translateX(0);
+//   }
+//   to {
+//     transform: translateX(-100%);
+//   }
+// `;
 
 export const MarqueeBox = styled(Box)({
   textAlign: "center",
@@ -27,11 +26,11 @@ export const MarqueeBox = styled(Box)({
 
   ".Logos": {
     display: "flex",
+    gap: "1px",
     overflow: "hidden",
 
     ".logos-slide": {
       display: "flex",
-      animation: `${ScrollerMaruee} 20s linear infinite`,
 
       img: {
         margin: "0 40px",
@@ -40,7 +39,6 @@ export const MarqueeBox = styled(Box)({
 
     "@media (max-width: 768px)": {
       ".logos-slide": {
-        animation: `${ScrollerMaruee} 30s linear infinite`,
         zIndex: 10,
 
         img: {
