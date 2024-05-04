@@ -1,13 +1,13 @@
 "use client";
 
 import React, { useState } from "react";
-import Image from "next/image";
-import Nav from "../header/Nav";
-import LanguageBtn from "../buttons/LanguageBtn";
-import useLanguage from "@/hooks/useLanguage";
 import { Box, ButtonGroup, Typography } from "@mui/material";
 import { OverLayStyle } from "../modals/ModalsStyle";
 import { BurgerBox } from "./BurgerMenuStyle";
+import Nav from "../header/Nav";
+import Image from "next/image";
+import LanguageBtn from "../buttons/LanguageBtn";
+import useLanguage from "@/hooks/useLanguage";
 
 const BurgerMenu = () => {
   const [menu, setMenu] = useState<boolean>(false);

@@ -2,8 +2,8 @@
 
 import React from "react";
 import { Box } from "@mui/material";
-import { useTranslations } from "next-intl";
 import { Link } from "react-scroll";
+import { useTranslations } from "next-intl";
 
 const Nav: React.FC<{ onClose?: () => void }> = ({ onClose }) => {
   const t = useTranslations("HeaderNav");

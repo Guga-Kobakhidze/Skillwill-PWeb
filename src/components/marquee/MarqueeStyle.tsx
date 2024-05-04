@@ -1,7 +1,6 @@
 "use client";
 
-import { Box, keyframes } from "@mui/material";
-import zIndex from "@mui/material/styles/zIndex";
+import { Box } from "@mui/material";
 import { styled } from "@mui/system";
 
 export const MarqueeBox = styled(Box)({

@@ -1,8 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import { MarqueeCompaniesProps } from "@/interfaces/interfaces";
-import { Box } from "@mui/material";
 import Marquee from "react-fast-marquee";
+import { MarqueeCompaniesProps } from "@/interfaces/interfaces";
 
 const Companies: React.FC<MarqueeCompaniesProps> = ({ data }) => {
   return (
