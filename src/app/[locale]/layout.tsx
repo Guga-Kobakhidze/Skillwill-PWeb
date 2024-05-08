@@ -4,9 +4,9 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Box } from "@mui/material";
 import { RootLayoutProps } from "@/interfaces/interfaces";
+import { NextIntlClientProvider, useMessages } from "next-intl";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
-import { NextIntlClientProvider, useMessages } from "next-intl";
 
 const inter = Inter({ subsets: ["latin"] });
 

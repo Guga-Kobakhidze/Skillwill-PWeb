@@ -1,9 +1,14 @@
+import emailjs, { EmailJSResponseStatus } from "@emailjs/browser";
 import React, { useRef, useState, useEffect } from "react";
 
 const useForm = () => {
+  const form = useRef<HTMLFormElement>();
+
   const RadioPrivateRef = useRef<HTMLInputElement>(null);
   const RadioCorporateRef = useRef<HTMLInputElement>(null);
   const [checked, setChecked] = useState<boolean>(false);
+  const [loading, setLoading] = useState<boolean>(false);
+  const [emailForm, setEmailForm] = useState<boolean>(false);
 
   const FirstNameRef = useRef<HTMLInputElement>(null);
   const LastNameRef = useRef<HTMLInputElement>(null);
@@ -89,6 +94,31 @@ const useForm = () => {
       setSubmited(true);
     }
 
+    if (emailForm) {
+      emailjs
+        .sendForm(
+          "service_88hn9cw",
+          "template_zvtywgo",
+          form.current!,
+          "B-uGOjbU4o3JcFiPd"
+        )
+        .then(
+          (result: EmailJSResponseStatus) => {
+            console.log(result.status);
+            console.log("message sent");
+            if (form.current) {
+              form.current.reset();
+            }
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        )
+        .finally(() => {
+          setLoading(false);
+        });
+    }
+
     if (FirstNameRef.current) FirstNameRef.current.value = "";
     if (LastNameRef.current) LastNameRef.current.value = "";
     if (EmailRef.current) EmailRef.current.value = "";
@@ -108,6 +138,8 @@ const useForm = () => {
     setSelectedValue,
     submited,
     onSubmit,
+    setEmailForm,
+    form,
   };
 };
 

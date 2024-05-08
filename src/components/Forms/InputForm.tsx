@@ -18,11 +18,13 @@ const InputForm: React.FC<InputFormProps> = ({
           label={t("firstName")}
           variant="outlined"
           inputRef={firstName}
+          name="user_name"
         />
         <TextField
           label={t("lastName")}
           variant="outlined"
           inputRef={lastName}
+          name="user_lastName"
         />
       </Box>
       <TextField
@@ -31,6 +33,7 @@ const InputForm: React.FC<InputFormProps> = ({
         fullWidth
         sx={{ mb: "24px" }}
         inputRef={phoneNumber}
+        name="user_phone"
       />
       <TextField
         label={t("email")}
@@ -38,6 +41,7 @@ const InputForm: React.FC<InputFormProps> = ({
         fullWidth
         sx={{ mb: "24px" }}
         inputRef={email}
+        name="user_email"
       />
     </Box>
   );

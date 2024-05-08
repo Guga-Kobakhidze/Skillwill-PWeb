@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import BtnComponent from "../buttons/BtnComponent";
 import Success from "./Success";
@@ -31,11 +31,16 @@ const ApplyForm: React.FC<ApllyFormProps> = ({ onClose }) => {
     submited,
     onSubmit,
     warning,
+    setEmailForm,
   } = useForm();
 
   const handleRadioChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSelectedValue(event.target.value);
   };
+
+  useEffect(() => {
+    setEmailForm(false);
+  }, []);
 
   return (
     <>

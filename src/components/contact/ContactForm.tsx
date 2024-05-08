@@ -1,12 +1,13 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import BtnComponent from "../buttons/BtnComponent";
 import useForm from "@/hooks/useForm";
 import InputForm from "../forms/InputForm";
 import { Box, Checkbox, FormControlLabel, FormGroup } from "@mui/material";
 import { useTranslations } from "next-intl";
+import emailjs, { EmailJSResponseStatus } from "@emailjs/browser";
 
 const ContactForm = () => {
   const t = useTranslations("FormContent");
@@ -20,14 +21,26 @@ const ContactForm = () => {
     setChecked,
     onSubmit,
     warning,
+    setEmailForm,
+    form,
   } = useForm();
 
   const handleCkeckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setChecked(event.target.checked);
   };
 
+  useEffect(() => {
+    setEmailForm(true);
+  }, []);
+
   return (
-    <Box component={"form"} onSubmit={onSubmit} mt={1} width={"100%"}>
+    <Box
+      component={"form"}
+      ref={form}
+      onSubmit={onSubmit}
+      mt={1}
+      width={"100%"}
+    >
       <InputForm
         email={EmailRef}
         firstName={FirstNameRef}
@@ -38,6 +51,7 @@ const ContactForm = () => {
         <FormControlLabel
           control={
             <Checkbox
+              name="message"
               onChange={handleCkeckboxChange}
               checked={checked}
               className="myCheckbox"
