@@ -7,7 +7,6 @@ import useForm from "@/hooks/useForm";
 import InputForm from "../forms/InputForm";
 import { Box, Checkbox, FormControlLabel, FormGroup } from "@mui/material";
 import { useTranslations } from "next-intl";
-import emailjs, { EmailJSResponseStatus } from "@emailjs/browser";
 
 const ContactForm = () => {
   const t = useTranslations("FormContent");

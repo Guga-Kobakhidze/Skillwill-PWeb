@@ -7,7 +7,7 @@ const useForm = () => {
   const RadioPrivateRef = useRef<HTMLInputElement>(null);
   const RadioCorporateRef = useRef<HTMLInputElement>(null);
   const [checked, setChecked] = useState<boolean>(false);
-  const [loading, setLoading] = useState<boolean>(false);
+  const [, setLoading] = useState<boolean>(false);
   const [emailForm, setEmailForm] = useState<boolean>(false);
 
   const FirstNameRef = useRef<HTMLInputElement>(null);

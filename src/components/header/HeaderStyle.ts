@@ -14,7 +14,7 @@ export const HeaderBox: SxProps = {
   padding: "22.5px 0",
   borderBottom: "1px solid rgba(0, 0, 0, 0.1)",
   backgroundColor: "white",
-  zIndex: 10,
+  zIndex: 100,
 
   ".btnGroup": {
     ...FlexBox,
